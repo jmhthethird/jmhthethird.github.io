@@ -1,0 +1,21 @@
+
+title: Everthing I know I won't remember and need to write down.
+email: jmhthethird@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  An assortment of things I work on or do. Cliff notes
+  of the day to day things I found interesting or wanted
+  to remember but didn't have anywhere to put it.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username:
+github_username:  jmhthethird
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

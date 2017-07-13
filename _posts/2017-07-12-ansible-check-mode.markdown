@@ -16,7 +16,7 @@ That looked something like this:
   register: app_id
 {% endhighlight %}
 
-And this worked great! It took away me having to manually grab an app id from a server, it stores it dynamically so I can reference it later and it removed me having to manually put that app id in my vars for the Ansible run.
+And this worked great! It took away me having to manually grab an app id from a server. It stores it dynamically so I can reference it later and it removed me having to manually put that app id in my vars for the Ansible run.
 
 The downside was the `--check` mode in Ansible skips shell commands by default as they often change things on the host system.
 
@@ -26,6 +26,7 @@ That looks like:
 {% highlight yaml%}
 - name: "Get app id"
   shell: "bash -lc 'echo $APPID'
+  check_mode: no
   register: app_id
 {% endhighlight %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Argparse for Bash"
-date:   2017-07-18 goes here
+date:   2017-07-18
 categories: argparse bash
 ---
 Still struggling a bit with bash scripting. I've been trying to build upon a previous colleagues `getops`, `case` and other bash-isms in their script to put in a few wanted features by the devs of my team.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Documentation is worth a thousand meetings
+title: "Documentation is worth a thousand meetings"
 date: 2017-07-21
 categories: tags
 ---

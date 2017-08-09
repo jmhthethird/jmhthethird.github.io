@@ -6,7 +6,7 @@ permalink: /resume/
 ---
 
 <body>
-    <object width="100%" height="100%" data="{{site.url}}/downloads/JackHefnerIIIResume.pdf" type="application/pdf">
+    <object width="100%" data="{{site.url}}/downloads/JackHefnerIIIResume.pdf" type="application/pdf">
         <embed src="{{site.url}}/downloads/JackHefnerIIIResume.pdf" type="application/pdf" />
     </object>
 </body>

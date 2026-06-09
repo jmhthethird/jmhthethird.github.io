@@ -1,5 +1,3 @@
-# robots.txt — effective only when this repo is served at the host root
-# (user site jmhthethird.github.io or a custom domain).
 User-agent: *
 Allow: /
 

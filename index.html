@@ -2,26 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<!-- Google Consent Mode v2 — default denied until the visitor chooses (EEA/UK-safe); must run before GTM -->
+
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
 try{if(localStorage.getItem('jh-consent')==='granted'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}}catch(e){}
 </script>
-<!-- Google Tag Manager -->
+
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NM2CDHX8');</script>
-<!-- End Google Tag Manager -->
+
 <title>Jack Hefner — SEO Data Analyst | Technical SEO & Analytics</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="SEO Data Analyst in the Seattle area specializing in technical audits, structured data, and GA4 analytics. This site is itself a hand-built SEO demo. View source.">
 <link rel="canonical" href="https://jmhthethird.github.io/">
 <meta name="theme-color" content="#F4F1EA">
 
-<!-- Social cards -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jmhthethird.github.io/">
 <meta property="og:site_name" content="Jack Hefner">
@@ -38,19 +37,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:image" content="https://jmhthethird.github.io/images/og-image.png">
 <meta name="twitter:image:alt" content="Jack Hefner — SEO Data Analyst personal site preview card">
 
-<!-- Favicons (relative paths so the project-site subpath resolves) -->
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 
-<!-- Preload the critical display face — ACTIVATE AT DEPLOY (after adding the
-     WOFF2 files to /fonts/, see fonts/README.txt). Kept commented so the page
-     ships with zero broken resources until the subset fonts are in place:
-<link rel="preload" href="fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
--->
-
-<!-- Structured data: WebSite + ProfilePage + Person -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -104,36 +95,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <style>
-/* ============================================================
-   Hefner Brand System — adapted for web (kit file 05)
-   ============================================================ */
 
-/* --- Fonts (kit files 05/06): self-host latin-subset WOFF2, zero third-party
-   origins, font-display: swap. The three brand @font-face blocks below are
-   commented until the subset files exist in /fonts/ (see fonts/README.txt) so
-   the page ships with no 404s. UNCOMMENT them — and the <link rel="preload">
-   in <head> — once instrument-serif.woff2 / instrument-serif-italic.woff2 /
-   jetbrains-mono.woff2 are added. Until then the metric-matched Georgia/system
-   fallback below renders the design correctly.
-
-@font-face{
-  font-family:"Instrument Serif";
-  src:url("fonts/instrument-serif.woff2") format("woff2");
-  font-weight:400; font-style:normal; font-display:swap;
-}
-@font-face{
-  font-family:"Instrument Serif";
-  src:url("fonts/instrument-serif-italic.woff2") format("woff2");
-  font-weight:400; font-style:italic; font-display:swap;
-}
-@font-face{
-  font-family:"JetBrains Mono";
-  src:url("fonts/jetbrains-mono.woff2") format("woff2");
-  font-weight:400; font-style:normal; font-display:swap;
-}
---- */
-/* Metric-matched fallback so the font swap causes ~zero CLS.
-   Final size-adjust to be tuned against the shipped subset. */
 @font-face{
   font-family:"Serif Fallback";
   src:local("Georgia"),local("Times New Roman"),local("Times");
@@ -149,14 +111,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
 
-  --pad:clamp(20px,6vw,110px);   /* horizontal section padding */
-  --vpad:clamp(56px,9vw,116px);  /* vertical section padding   */
+  --pad:clamp(20px,6vw,110px);
+  --vpad:clamp(56px,9vw,116px);
 }
 
 *{box-sizing:border-box;}
 html{
   -webkit-text-size-adjust:100%;
-  scroll-padding-top:112px; /* >= mobile sticky-header height (WCAG 2.4.11) */
+  scroll-padding-top:112px;
 }
 body{
   margin:0;
@@ -172,7 +134,6 @@ img{max-width:100%;height:auto;display:block;}
 a{color:var(--accent-deep);}
 ::selection{background:rgba(200,133,63,0.22);}
 
-/* --- Shared type roles --- */
 .eyebrow{
   font-family:var(--mono); font-size:12px; font-weight:400;
   text-transform:uppercase; letter-spacing:.12em; color:var(--ink-2);
@@ -186,7 +147,6 @@ p{margin:0 0 1em;}
 .lead{font-size:clamp(18px,2.4vw,20px);color:var(--ink-2);}
 .measure{max-width:65ch;}
 
-/* --- Accessibility helpers --- */
 .sr-only{
   position:absolute;width:1px;height:1px;padding:0;margin:-1px;
   overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
@@ -204,7 +164,6 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
 }
 .on-ink a:focus-visible,.on-ink .pill:focus-visible{outline-color:var(--accent);}
 
-/* --- Buttons --- */
 .pill{
   display:inline-flex;align-items:center;gap:.5em;
   font-family:var(--mono);font-size:13px;letter-spacing:.04em;
@@ -219,9 +178,6 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
 .on-ink .pill--ghost{color:var(--paper);border-color:rgba(244,241,234,.32);}
 .on-ink .pill--ghost:hover{border-color:var(--accent);color:var(--accent);}
 
-/* ============================================================
-   Header / nav
-   ============================================================ */
 .site-header{
   position:sticky;top:0;z-index:50;
   background:rgba(244,241,234,.92);
@@ -252,9 +208,6 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
 .nav-links a:hover{color:var(--accent-deep);border-bottom-color:var(--accent);}
 .nav .pill{padding:9px 16px;min-height:40px;}
 
-/* ============================================================
-   Hero
-   ============================================================ */
 .hero{padding:clamp(48px,9vw,108px) var(--pad) clamp(40px,7vw,80px);}
 .hero h1{
   font-size:clamp(46px,11vw,76px);line-height:.96;letter-spacing:-.022em;
@@ -282,7 +235,7 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
   font-family:var(--mono);font-size:12px;letter-spacing:.04em;
   color:var(--ink-2);max-width:24ch;
 }
-/* Hero portrait — two-column on desktop, small avatar on mobile */
+
 .hero-portrait{margin:0;}
 .hero-portrait img{
   display:block;width:100%;height:auto;
@@ -298,15 +251,12 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
   .hero{display:grid;grid-template-columns:minmax(0,1fr) clamp(248px,26vw,332px);gap:clamp(36px,5vw,84px);align-items:center;}
   .hero-portrait img{aspect-ratio:4/5;}
 }
-/* Playful Budapest photo note — hand-drawn arrow + handwritten-feel aside (desktop only) */
+
 .photo-note{margin:14px 0 0;}
 .photo-arrow{display:block;width:82px;height:auto;color:var(--accent-deep);margin:0 38px 0 auto;}
 .photo-note-text{font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.3;color:var(--ink-2);margin:2px 0 0;text-wrap:pretty;}
 @media (max-width:879px){.photo-note{display:none;}}
 
-/* ============================================================
-   Proof bar (ledger)
-   ============================================================ */
 .proofbar{background:var(--paper-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
 .proofbar .inner{padding:clamp(40px,6vw,68px) var(--pad);}
 .chrome{
@@ -331,13 +281,9 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
 .ledger-story{color:var(--ink-2);max-width:46ch;align-self:center;}
 .ledger-src{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink-2);align-self:center;}
 
-/* ============================================================
-   Generic content section
-   ============================================================ */
 .section{padding:var(--vpad) var(--pad);}
 .section--alt{background:var(--paper-2);}
 
-/* About */
 .about-grid{display:grid;gap:clamp(32px,5vw,56px);}
 .mapping{border-top:1px solid var(--rule);}
 .map-row{
@@ -352,7 +298,6 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
 .sames a .dot{color:var(--accent);}
 .sames a:hover{text-decoration:underline;}
 
-/* Skills tiles */
 .tiles{display:grid;grid-template-columns:1fr;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:4px;overflow:hidden;}
 .tile{background:var(--paper);padding:clamp(22px,3vw,30px);}
 .section--alt .tile{background:var(--paper-2);}
@@ -366,7 +311,6 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
   border-radius:999px;padding:7px 13px;color:var(--ink-2);
 }
 
-/* Work / case studies */
 .cases{display:grid;gap:1px;background:var(--rule);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
 .case{background:var(--paper);padding:clamp(26px,4vw,38px) 0;}
 .section--alt .case{background:var(--paper-2);}
@@ -380,15 +324,11 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
 .checklist .dot{color:var(--accent);font-size:11px;line-height:1.4;}
 .checklist b{font-weight:inherit;color:var(--ink);font-style:italic;font-family:var(--serif);font-size:18px;}
 
-/* FAQ */
 .faq{display:grid;gap:1px;background:var(--rule);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
 .faq-item{background:var(--paper);padding:clamp(22px,3vw,30px) 0;}
 .section--alt .faq-item{background:var(--paper-2);}
 .faq-item p{color:var(--ink-2);max-width:62ch;margin:0;}
 
-/* ============================================================
-   Contact + footer (dark ink)
-   ============================================================ */
 .on-ink{background:var(--ink);color:var(--paper);}
 .contact{padding:var(--vpad) var(--pad);}
 .on-ink .chrome .label,.on-ink .chrome .desc{color:rgba(244,241,234,.6);}
@@ -412,7 +352,7 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
 .colophon-stamp b{color:var(--paper);font-weight:400;}
 .colophon-stamp a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(200,133,63,.5);}
 .colophon-stamp a:hover{border-bottom-color:var(--accent);}
-/* Consent bar (Profile B / tracked build only) */
+
 .consent{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--ink);color:var(--paper);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 20px;padding:13px var(--pad);border-top:1px solid rgba(244,241,234,.16);transform:translateY(8px);opacity:0;visibility:hidden;transition:transform .3s ease,opacity .3s ease,visibility 0s linear .3s;}
 .consent.is-open{transform:none;opacity:1;visibility:visible;transition:transform .3s ease,opacity .3s ease;}
 @media (prefers-reduced-motion:reduce){.consent,.consent.is-open{transition:none;}}
@@ -425,17 +365,15 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
 .consent .decline:hover{border-color:var(--accent);color:var(--accent);}
 .consent button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
 .consent .consent-msg{font-family:var(--mono);font-size:12px;letter-spacing:.02em;color:var(--accent);}
-/* Cookie-settings reopen link in footer */
+
 .cookie-link{background:none;border:0;padding:0;margin:0;cursor:pointer;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:3px;}
 .cookie-link:hover{color:var(--accent);}
 .cookie-link:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px;}
 
-/* Hero career path (replaces the proof bullets) */
 .careerpath{display:flex;flex-wrap:wrap;align-items:center;gap:7px 11px;margin-top:clamp(22px,3.4vw,30px);padding:0;font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--ink-2);}
 .careerpath i{color:var(--accent);font-style:normal;}
 .careerpath .now{color:var(--accent-deep);font-style:italic;font-family:var(--serif);font-size:19px;letter-spacing:0;}
 
-/* 01 · Career timeline (ledger on the cream band) */
 .proofbar h2{margin:clamp(18px,2.4vw,26px) 0 clamp(20px,3vw,30px);max-width:18ch;}
 .timeline{display:grid;}
 .tl-row{display:grid;grid-template-columns:1fr;gap:4px 28px;padding:22px 0;border-top:1px solid var(--rule);}
@@ -447,7 +385,6 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
 .tl-src{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink-2);align-self:start;}
 .tl-row.now .tl-year,.tl-row.now .tl-head{color:var(--accent-deep);font-style:italic;}
 
-/* 05 · At a glance */
 .glance{border-top:1px solid var(--rule);margin:0;}
 .glance .g-row{display:grid;grid-template-columns:1fr;gap:3px 28px;padding:16px 0;border-bottom:1px solid var(--rule);}
 .glance dt{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);}
@@ -455,9 +392,6 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
 .glance dd.big{font-family:var(--serif);font-size:clamp(20px,2.2vw,24px);color:var(--ink);line-height:1;}
 .glance dd.acc{color:var(--accent-deep);font-style:italic;font-family:var(--serif);font-size:clamp(18px,1.9vw,21px);}
 
-/* ============================================================
-   Responsive
-   ============================================================ */
 @media (min-width:680px){
   .ledger-row{grid-template-columns:minmax(160px,1fr) 2fr auto;align-items:baseline;}
   .map-row .to{font-size:22px;}
@@ -481,14 +415,10 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
   .case-inner .full{grid-column:1 / -1;}
 }
 
-/* Smooth scroll only when motion is welcome. No entrance animation:
-   content (and the h1 LCP element) must always be visible without depending
-   on an animation completing — a paused/backgrounded tab must still render. */
 @media (prefers-reduced-motion:no-preference){
   html{scroll-behavior:smooth;}
 }
 
-/* Print: black on white, drop chrome, expand link URLs */
 @media print{
   .site-header,.hero-cta,.contact-cta,.skip-link{display:none;}
   body{background:#fff;color:#000;font-size:11pt;}
@@ -497,11 +427,9 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
   a[href^="http"]::after{content:" (" attr(href) ")";font-family:monospace;font-size:.85em;}
 }
 
-/* ===== Variant-specific additions (shared superset) ===== */
 .dash-blk{margin-top:clamp(34px,4.4vw,52px);}
 .dash-blk:first-child{margin-top:0;}
 
-/* vertical timeline (timeline-led / dashboard / minimal) */
 .vtl{position:relative;margin-top:clamp(10px,2vw,20px);}
 .vtl::before{content:"";position:absolute;left:7px;top:9px;bottom:9px;width:1px;background:var(--rule);}
 .vtl-row{position:relative;padding:0 0 clamp(26px,3.4vw,40px) 36px;}
@@ -515,7 +443,6 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
 .vtl-story{color:var(--ink-2);max-width:62ch;font-size:16px;margin:0;}
 .vtl-src{font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-top:9px;}
 
-/* essay (narrative) */
 .essay-grid{display:grid;gap:clamp(36px,5vw,64px);}
 .essay p{max-width:64ch;}
 .essay h3{margin-top:1.7em;}
@@ -530,7 +457,6 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
 .mini-tl .m-tx b{font-weight:inherit;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:16px;}
 .aside .acard{margin-top:clamp(26px,3vw,34px);}
 
-/* dashboard */
 .dash{display:grid;gap:clamp(28px,4vw,46px);}
 .pcard{background:var(--paper-2);border:1px solid var(--rule);border-radius:4px;padding:clamp(24px,3vw,32px);}
 .pcard-portrait{margin:0 0 18px;max-width:150px;}
@@ -555,8 +481,6 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
   .pcard{position:sticky;top:84px;}
 }
 
-
-/* ===== v6 — career callout rail (fills the timeline's free space) ===== */
 .cthesis{font-family:var(--serif);font-style:italic;font-size:clamp(24px,3.6vw,36px);line-height:1.14;letter-spacing:-.01em;color:var(--ink);max-width:21ch;margin:0 0 clamp(30px,4.5vw,48px);}
 .cthesis em{color:var(--accent-deep);font-style:italic;}
 .careergrid{display:grid;gap:clamp(34px,5vw,56px);}
@@ -586,10 +510,10 @@ a:focus-visible,button:focus-visible,.pill:focus-visible{
 </style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
+
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM2CDHX8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <nav class="nav" aria-label="Section navigation">
@@ -725,7 +649,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     try{localStorage.setItem('jh-consent',v);}catch(e){}
     if(v==='granted'&&typeof gtag==='function'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}
     if(v==='denied'&&typeof gtag==='function'){gtag('consent','update',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});}
-    // brief confirmation, then slide away
     btns.style.display='none';
     txt.innerHTML=(v==='granted'?'Thanks \u2014 analytics on.':'Got it \u2014 analytics off.')+' <span class=\"consent-msg\">You can change this anytime under Cookie settings.</span>';
     msgTimer=setTimeout(close,1500);

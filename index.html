@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Google Consent Mode v2 — default denied until the visitor chooses (EEA/UK-safe); must run before GTM -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+try{if(localStorage.getItem('jh-consent')==='granted'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}}catch(e){}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NM2CDHX8');</script>
+<!-- End Google Tag Manager -->
+<title>Jack Hefner — SEO Data Analyst | Technical SEO & Analytics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SEO Data Analyst in the Seattle area specializing in technical audits, structured data, and GA4 analytics. This site is itself a hand-built SEO demo. View source.">
+<link rel="canonical" href="https://jmhthethird.github.io/">
+<meta name="theme-color" content="#F4F1EA">
+
+<!-- Social cards -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jmhthethird.github.io/">
+<meta property="og:site_name" content="Jack Hefner">
+<meta property="og:title" content="Jack Hefner — SEO Data Analyst">
+<meta property="og:description" content="Technical SEO, structured data, and analytics. This site is the live portfolio.">
+<meta property="og:image" content="https://jmhthethird.github.io/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jack Hefner — SEO Data Analyst personal site preview card">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jack Hefner — SEO Data Analyst">
+<meta name="twitter:description" content="Technical SEO, structured data, and analytics. This site is the live portfolio.">
+<meta name="twitter:image" content="https://jmhthethird.github.io/images/og-image.png">
+<meta name="twitter:image:alt" content="Jack Hefner — SEO Data Analyst personal site preview card">
+
+<!-- Favicons (relative paths so the project-site subpath resolves) -->
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Preload the critical display face — ACTIVATE AT DEPLOY (after adding the
+     WOFF2 files to /fonts/, see fonts/README.txt). Kept commented so the page
+     ships with zero broken resources until the subset fonts are in place:
+<link rel="preload" href="fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+-->
+
+<!-- Structured data: WebSite + ProfilePage + Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://jmhthethird.github.io/#website",
+      "url": "https://jmhthethird.github.io/",
+      "name": "Jack Hefner",
+      "publisher": { "@id": "https://jmhthethird.github.io/#person" }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://jmhthethird.github.io/#profilepage",
+      "url": "https://jmhthethird.github.io/",
+      "isPartOf": { "@id": "https://jmhthethird.github.io/#website" },
+      "dateCreated": "2026-06-07T09:00:00-07:00",
+      "dateModified": "2026-06-07T09:00:00-07:00",
+      "mainEntity": { "@id": "https://jmhthethird.github.io/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://jmhthethird.github.io/#person",
+      "name": "Jack Hefner",
+      "jobTitle": "SEO Data Analyst",
+      "description": "SEO Data Analyst in the Seattle area specializing in technical SEO, structured data, and GA4 analytics; 14 years of software engineering background.",
+      "image": "https://jmhthethird.github.io/images/jack-hefner.jpg",
+      "url": "https://jmhthethird.github.io/",
+      "email": "mailto:jmhthethird@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/jhefneriii",
+        "https://github.com/jmhthethird"
+      ],
+      "knowsAbout": [
+        "Search engine optimization",
+        "Technical SEO",
+        "Structured data",
+        "Google Analytics 4",
+        "Google Search Console",
+        "Keyword research"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lake Stevens",
+        "addressRegion": "WA",
+        "addressCountry": "US"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+/* ============================================================
+   Hefner Brand System — adapted for web (kit file 05)
+   ============================================================ */
+
+/* --- Fonts (kit files 05/06): self-host latin-subset WOFF2, zero third-party
+   origins, font-display: swap. The three brand @font-face blocks below are
+   commented until the subset files exist in /fonts/ (see fonts/README.txt) so
+   the page ships with no 404s. UNCOMMENT them — and the <link rel="preload">
+   in <head> — once instrument-serif.woff2 / instrument-serif-italic.woff2 /
+   jetbrains-mono.woff2 are added. Until then the metric-matched Georgia/system
+   fallback below renders the design correctly.
+
+@font-face{
+  font-family:"Instrument Serif";
+  src:url("fonts/instrument-serif.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:"Instrument Serif";
+  src:url("fonts/instrument-serif-italic.woff2") format("woff2");
+  font-weight:400; font-style:italic; font-display:swap;
+}
+@font-face{
+  font-family:"JetBrains Mono";
+  src:url("fonts/jetbrains-mono.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap;
+}
+--- */
+/* Metric-matched fallback so the font swap causes ~zero CLS.
+   Final size-adjust to be tuned against the shipped subset. */
+@font-face{
+  font-family:"Serif Fallback";
+  src:local("Georgia"),local("Times New Roman"),local("Times");
+  ascent-override:92%; descent-override:24%; line-gap-override:0%; size-adjust:106%;
+}
+
+:root{
+  --paper:#F4F1EA; --paper-2:#ECE6DB; --paper-3:#E3DCCC;
+  --ink:#1A1814; --ink-2:#3A352D; --muted:#8A8275;
+  --rule:#D9D2C3; --accent:#C8853F; --accent-deep:#964F1E;
+
+  --serif:"Instrument Serif","Serif Fallback",Georgia,"Times New Roman",serif;
+  --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+
+  --pad:clamp(20px,6vw,110px);   /* horizontal section padding */
+  --vpad:clamp(56px,9vw,116px);  /* vertical section padding   */
+}
+
+*{box-sizing:border-box;}
+html{
+  -webkit-text-size-adjust:100%;
+  scroll-padding-top:112px; /* >= mobile sticky-header height (WCAG 2.4.11) */
+}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:18px; line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-wrap:break-word;
+}
+img{max-width:100%;height:auto;display:block;}
+a{color:var(--accent-deep);}
+::selection{background:rgba(200,133,63,0.22);}
+
+/* --- Shared type roles --- */
+.eyebrow{
+  font-family:var(--mono); font-size:12px; font-weight:400;
+  text-transform:uppercase; letter-spacing:.12em; color:var(--ink-2);
+  margin:0;
+}
+.eyebrow .dot{color:var(--accent);}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;}
+h2{font-size:clamp(28px,4.6vw,35px);line-height:1.1;margin:0 0 .5em;}
+h3{font-size:clamp(20px,3vw,22px);line-height:1.15;margin:0 0 .4em;}
+p{margin:0 0 1em;}
+.lead{font-size:clamp(18px,2.4vw,20px);color:var(--ink-2);}
+.measure{max-width:65ch;}
+
+/* --- Accessibility helpers --- */
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
+.skip-link{
+  position:absolute;left:12px;top:-60px;z-index:100;
+  background:var(--accent);color:var(--ink);
+  font-family:var(--mono);font-size:13px;letter-spacing:.04em;
+  padding:10px 16px;border-radius:4px;text-decoration:none;
+  transition:top .15s ease;
+}
+.skip-link:focus{top:12px;}
+a:focus-visible,button:focus-visible,.pill:focus-visible{
+  outline:2px solid var(--accent-deep);outline-offset:2px;border-radius:2px;
+}
+.on-ink a:focus-visible,.on-ink .pill:focus-visible{outline-color:var(--accent);}
+
+/* --- Buttons --- */
+.pill{
+  display:inline-flex;align-items:center;gap:.5em;
+  font-family:var(--mono);font-size:13px;letter-spacing:.04em;
+  text-decoration:none;border-radius:999px;
+  padding:13px 22px;min-height:48px;
+  border:1px solid transparent;transition:background .15s ease,border-color .15s ease,color .15s ease;
+}
+.pill--primary{background:var(--accent);color:var(--ink);}
+.pill--primary:hover{background:var(--accent-deep);color:var(--paper);}
+.pill--ghost{background:transparent;color:var(--ink-2);border-color:var(--rule);}
+.pill--ghost:hover{border-color:var(--accent);color:var(--accent-deep);}
+.on-ink .pill--ghost{color:var(--paper);border-color:rgba(244,241,234,.32);}
+.on-ink .pill--ghost:hover{border-color:var(--accent);color:var(--accent);}
+
+/* ============================================================
+   Header / nav
+   ============================================================ */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(244,241,234,.92);
+  border-bottom:1px solid var(--rule);
+}
+.nav{
+  display:grid;grid-template-columns:1fr auto;
+  grid-template-areas:"wm pill" "links links";
+  align-items:center;gap:9px 16px;
+  padding:11px var(--pad);
+}
+.wordmark{
+  grid-area:wm;
+  font-family:var(--serif);font-size:24px;letter-spacing:-.02em;
+  color:var(--ink);text-decoration:none;line-height:1;white-space:nowrap;
+}
+.nav-email{grid-area:pill;justify-self:end;}
+.nav-links{
+  grid-area:links;
+  display:flex;align-items:center;flex-wrap:wrap;gap:6px 18px;
+  list-style:none;margin:0;padding:0;
+}
+.nav-links a{
+  font-family:var(--mono);font-size:12px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--ink-2);text-decoration:none;
+  padding:6px 2px;border-bottom:1px solid transparent;
+}
+.nav-links a:hover{color:var(--accent-deep);border-bottom-color:var(--accent);}
+.nav .pill{padding:9px 16px;min-height:40px;}
+
+/* ============================================================
+   Hero
+   ============================================================ */
+.hero{padding:clamp(48px,9vw,108px) var(--pad) clamp(40px,7vw,80px);}
+.hero h1{
+  font-size:clamp(46px,11vw,76px);line-height:.96;letter-spacing:-.022em;
+  margin:.32em 0 0;color:var(--ink);
+}
+.hero h1 .role{
+  display:block;font-style:italic;color:var(--accent-deep);
+  font-size:clamp(30px,7vw,52px);line-height:1;margin-top:.06em;
+}
+.hero .subhead{
+  margin-top:clamp(20px,3.4vw,30px);max-width:30ch;
+  font-size:clamp(19px,2.7vw,24px);line-height:1.42;color:var(--ink-2);
+}
+.proofline{
+  display:flex;flex-wrap:wrap;gap:8px 26px;
+  margin-top:clamp(22px,3.4vw,30px);padding:0;list-style:none;
+}
+.proofline li{
+  font-family:var(--mono);font-size:13px;letter-spacing:.02em;color:var(--ink-2);
+  display:flex;align-items:baseline;gap:9px;
+}
+.proofline .dot{color:var(--accent);font-size:11px;line-height:1;}
+.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin-top:clamp(26px,4vw,38px);}
+.avail{
+  font-family:var(--mono);font-size:12px;letter-spacing:.04em;
+  color:var(--ink-2);max-width:24ch;
+}
+/* Hero portrait — two-column on desktop, small avatar on mobile */
+.hero-portrait{margin:0;}
+.hero-portrait img{
+  display:block;width:100%;height:auto;
+  border:1px solid var(--rule);border-radius:6px;
+  object-fit:cover;object-position:62% 34%;background:var(--paper-2);
+}
+@media (max-width:879px){
+  .hero{display:flex;flex-direction:column;align-items:flex-start;}
+  .hero-portrait{order:-1;width:104px;margin-bottom:20px;}
+  .hero-portrait img{aspect-ratio:1/1;border-radius:10px;}
+}
+@media (min-width:880px){
+  .hero{display:grid;grid-template-columns:minmax(0,1fr) clamp(248px,26vw,332px);gap:clamp(36px,5vw,84px);align-items:center;}
+  .hero-portrait img{aspect-ratio:4/5;}
+}
+/* Playful Budapest photo note — hand-drawn arrow + handwritten-feel aside (desktop only) */
+.photo-note{margin:14px 0 0;}
+.photo-arrow{display:block;width:82px;height:auto;color:var(--accent-deep);margin:0 38px 0 auto;}
+.photo-note-text{font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.3;color:var(--ink-2);margin:2px 0 0;text-wrap:pretty;}
+@media (max-width:879px){.photo-note{display:none;}}
+
+/* ============================================================
+   Proof bar (ledger)
+   ============================================================ */
+.proofbar{background:var(--paper-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+.proofbar .inner{padding:clamp(40px,6vw,68px) var(--pad);}
+.chrome{
+  display:flex;justify-content:space-between;gap:10px 16px;flex-wrap:wrap;
+  margin-bottom:clamp(22px,3.4vw,34px);
+}
+.proofbar .chrome{margin-bottom:clamp(20px,3vw,30px);}
+.chrome .label{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);}
+.chrome .label .dot{color:var(--accent);}
+.chrome .desc{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink-2);}
+.ledger{display:grid;gap:0;}
+.ledger-row{
+  display:grid;grid-template-columns:1fr;gap:6px 28px;
+  padding:22px 0;border-top:1px solid var(--rule);
+}
+.ledger-row:last-child{border-bottom:1px solid var(--rule);}
+.ledger-fig{
+  font-family:var(--serif);font-size:clamp(40px,8vw,56px);line-height:.95;
+  letter-spacing:-.02em;color:var(--ink);
+}
+.ledger-fig .unit{font-style:italic;font-size:.5em;color:var(--accent-deep);margin-left:.15em;}
+.ledger-story{color:var(--ink-2);max-width:46ch;align-self:center;}
+.ledger-src{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink-2);align-self:center;}
+
+/* ============================================================
+   Generic content section
+   ============================================================ */
+.section{padding:var(--vpad) var(--pad);}
+.section--alt{background:var(--paper-2);}
+
+/* About */
+.about-grid{display:grid;gap:clamp(32px,5vw,56px);}
+.mapping{border-top:1px solid var(--rule);}
+.map-row{
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;
+  padding:16px 0;border-bottom:1px solid var(--rule);
+}
+.map-row .from{color:var(--ink-2);}
+.map-row .to{color:var(--ink);font-style:italic;font-family:var(--serif);font-size:20px;line-height:1.1;}
+.map-row .arrow{color:var(--accent);font-family:var(--mono);font-size:18px;}
+.sames{display:flex;flex-wrap:wrap;gap:18px;margin-top:6px;padding:0;list-style:none;}
+.sames a{font-family:var(--mono);font-size:13px;letter-spacing:.03em;display:inline-flex;gap:8px;align-items:baseline;text-decoration:none;color:var(--accent-deep);}
+.sames a .dot{color:var(--accent);}
+.sames a:hover{text-decoration:underline;}
+
+/* Skills tiles */
+.tiles{display:grid;grid-template-columns:1fr;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:4px;overflow:hidden;}
+.tile{background:var(--paper);padding:clamp(22px,3vw,30px);}
+.section--alt .tile{background:var(--paper-2);}
+.tile .idx{font-family:var(--serif);font-size:20px;color:var(--accent-deep);display:block;margin-bottom:10px;}
+.tile h3{margin-bottom:.35em;}
+.tile p{color:var(--ink-2);margin:0;font-size:16px;}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:clamp(26px,3vw,34px);padding:0;list-style:none;}
+.chip{
+  font-family:var(--mono);font-size:12px;letter-spacing:.04em;
+  background:rgba(255,255,255,.45);border:1px solid var(--rule);
+  border-radius:999px;padding:7px 13px;color:var(--ink-2);
+}
+
+/* Work / case studies */
+.cases{display:grid;gap:1px;background:var(--rule);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+.case{background:var(--paper);padding:clamp(26px,4vw,38px) 0;}
+.section--alt .case{background:var(--paper-2);}
+.case-inner{display:grid;gap:18px;}
+.case .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-deep);}
+.case p{color:var(--ink-2);max-width:62ch;margin:0;}
+.case .bridge{color:var(--ink);font-style:italic;font-family:var(--serif);font-size:21px;line-height:1.25;max-width:46ch;}
+.case .src{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink-2);}
+.checklist{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px;}
+.checklist li{display:flex;gap:12px;align-items:baseline;color:var(--ink-2);font-size:16px;}
+.checklist .dot{color:var(--accent);font-size:11px;line-height:1.4;}
+.checklist b{font-weight:inherit;color:var(--ink);font-style:italic;font-family:var(--serif);font-size:18px;}
+
+/* FAQ */
+.faq{display:grid;gap:1px;background:var(--rule);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+.faq-item{background:var(--paper);padding:clamp(22px,3vw,30px) 0;}
+.section--alt .faq-item{background:var(--paper-2);}
+.faq-item p{color:var(--ink-2);max-width:62ch;margin:0;}
+
+/* ============================================================
+   Contact + footer (dark ink)
+   ============================================================ */
+.on-ink{background:var(--ink);color:var(--paper);}
+.contact{padding:var(--vpad) var(--pad);}
+.on-ink .chrome .label,.on-ink .chrome .desc{color:rgba(244,241,234,.6);}
+.contact h2{color:var(--paper);}
+.contact .ask{font-size:clamp(20px,3vw,26px);color:var(--paper);max-width:30ch;margin:.2em 0 0;font-family:var(--serif);line-height:1.18;}
+.contact .ask em{color:var(--accent);font-style:italic;}
+.contact-cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin-top:clamp(26px,4vw,36px);}
+.contact .avail{color:rgba(244,241,234,.62);}
+
+.site-footer{padding:clamp(34px,5vw,52px) var(--pad);border-top:1px solid rgba(244,241,234,.14);}
+.foot-line{
+  display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;
+  font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:rgba(244,241,234,.62);
+}
+.foot-line a{color:var(--paper);text-decoration:underline;text-underline-offset:3px;}
+.foot-line a:hover{color:var(--accent);}
+.foot-line .sep{color:rgba(244,241,234,.34);}
+.foot-note{margin-top:14px;font-family:var(--mono);font-size:12px;color:rgba(244,241,234,.45);}
+.colophon-stamp{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px 9px;max-width:100%;margin-top:20px;border:1px solid rgba(244,241,234,.2);border-radius:999px;padding:7px 14px;font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:rgba(244,241,234,.68);line-height:1.45;}
+.colophon-stamp .cdot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(200,133,63,.18);flex:none;}
+.colophon-stamp b{color:var(--paper);font-weight:400;}
+.colophon-stamp a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(200,133,63,.5);}
+.colophon-stamp a:hover{border-bottom-color:var(--accent);}
+/* Consent bar (Profile B / tracked build only) */
+.consent{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--ink);color:var(--paper);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 20px;padding:13px var(--pad);border-top:1px solid rgba(244,241,234,.16);transform:translateY(8px);opacity:0;visibility:hidden;transition:transform .3s ease,opacity .3s ease,visibility 0s linear .3s;}
+.consent.is-open{transform:none;opacity:1;visibility:visible;transition:transform .3s ease,opacity .3s ease;}
+@media (prefers-reduced-motion:reduce){.consent,.consent.is-open{transition:none;}}
+.consent p{margin:0;font-family:var(--mono);font-size:12px;letter-spacing:.02em;line-height:1.5;color:rgba(244,241,234,.82);max-width:64ch;}
+.consent-btns{display:flex;gap:10px;flex:none;}
+.consent button{font-family:var(--mono);font-size:12px;letter-spacing:.04em;cursor:pointer;border-radius:999px;padding:9px 17px;min-height:40px;border:1px solid transparent;transition:background .15s ease,border-color .15s ease,color .15s ease;}
+.consent .accept{background:var(--accent);color:var(--ink);}
+.consent .accept:hover{background:var(--accent-deep);color:var(--paper);}
+.consent .decline{background:transparent;color:var(--paper);border-color:rgba(244,241,234,.32);}
+.consent .decline:hover{border-color:var(--accent);color:var(--accent);}
+.consent button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.consent .consent-msg{font-family:var(--mono);font-size:12px;letter-spacing:.02em;color:var(--accent);}
+/* Cookie-settings reopen link in footer */
+.cookie-link{background:none;border:0;padding:0;margin:0;cursor:pointer;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:3px;}
+.cookie-link:hover{color:var(--accent);}
+.cookie-link:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px;}
+
+/* Hero career path (replaces the proof bullets) */
+.careerpath{display:flex;flex-wrap:wrap;align-items:center;gap:7px 11px;margin-top:clamp(22px,3.4vw,30px);padding:0;font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--ink-2);}
+.careerpath i{color:var(--accent);font-style:normal;}
+.careerpath .now{color:var(--accent-deep);font-style:italic;font-family:var(--serif);font-size:19px;letter-spacing:0;}
+
+/* 01 · Career timeline (ledger on the cream band) */
+.proofbar h2{margin:clamp(18px,2.4vw,26px) 0 clamp(20px,3vw,30px);max-width:18ch;}
+.timeline{display:grid;}
+.tl-row{display:grid;grid-template-columns:1fr;gap:4px 28px;padding:22px 0;border-top:1px solid var(--rule);}
+.tl-row:last-child{border-bottom:1px solid var(--rule);}
+.tl-year{font-family:var(--serif);font-size:clamp(32px,5vw,46px);line-height:.95;letter-spacing:-.02em;color:var(--ink);}
+.tl-mid{display:flex;flex-direction:column;gap:5px;}
+.tl-head{font-family:var(--serif);font-size:clamp(20px,2.4vw,24px);line-height:1.12;color:var(--ink);}
+.tl-story{color:var(--ink-2);max-width:60ch;font-size:16px;margin:0;}
+.tl-src{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink-2);align-self:start;}
+.tl-row.now .tl-year,.tl-row.now .tl-head{color:var(--accent-deep);font-style:italic;}
+
+/* 05 · At a glance */
+.glance{border-top:1px solid var(--rule);margin:0;}
+.glance .g-row{display:grid;grid-template-columns:1fr;gap:3px 28px;padding:16px 0;border-bottom:1px solid var(--rule);}
+.glance dt{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);}
+.glance dd{margin:0;color:var(--ink-2);font-size:16px;line-height:1.45;}
+.glance dd.big{font-family:var(--serif);font-size:clamp(20px,2.2vw,24px);color:var(--ink);line-height:1;}
+.glance dd.acc{color:var(--accent-deep);font-style:italic;font-family:var(--serif);font-size:clamp(18px,1.9vw,21px);}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (min-width:680px){
+  .ledger-row{grid-template-columns:minmax(160px,1fr) 2fr auto;align-items:baseline;}
+  .map-row .to{font-size:22px;}
+  .tl-row{grid-template-columns:minmax(92px,auto) 1fr auto;align-items:baseline;}
+  .glance .g-row{grid-template-columns:minmax(150px,200px) 1fr;align-items:baseline;}
+}
+@media (min-width:760px){
+  html{scroll-padding-top:84px;}
+  .nav{
+    grid-template-columns:auto 1fr auto;
+    grid-template-areas:"wm links pill";
+    gap:0 28px;padding:13px var(--pad);
+  }
+  .nav-links{justify-content:flex-end;gap:clamp(14px,2.4vw,26px);}
+}
+@media (min-width:880px){
+  .hero h1{margin-top:.18em;}
+  .about-grid{grid-template-columns:1.05fr .95fr;align-items:start;}
+  .tiles{grid-template-columns:1fr 1fr;}
+  .case-inner{grid-template-columns:1fr 1fr;align-items:start;}
+  .case-inner .full{grid-column:1 / -1;}
+}
+
+/* Smooth scroll only when motion is welcome. No entrance animation:
+   content (and the h1 LCP element) must always be visible without depending
+   on an animation completing — a paused/backgrounded tab must still render. */
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth;}
+}
+
+/* Print: black on white, drop chrome, expand link URLs */
+@media print{
+  .site-header,.hero-cta,.contact-cta,.skip-link{display:none;}
+  body{background:#fff;color:#000;font-size:11pt;}
+  .on-ink,.proofbar,.section--alt{background:#fff;color:#000;}
+  .case,.tile,.tl-row,.glance .g-row{break-inside:avoid;}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-family:monospace;font-size:.85em;}
+}
+
+/* ===== Variant-specific additions (shared superset) ===== */
+.dash-blk{margin-top:clamp(34px,4.4vw,52px);}
+.dash-blk:first-child{margin-top:0;}
+
+/* vertical timeline (timeline-led / dashboard / minimal) */
+.vtl{position:relative;margin-top:clamp(10px,2vw,20px);}
+.vtl::before{content:"";position:absolute;left:7px;top:9px;bottom:9px;width:1px;background:var(--rule);}
+.vtl-row{position:relative;padding:0 0 clamp(26px,3.4vw,40px) 36px;}
+.vtl-row:last-child{padding-bottom:0;}
+.vtl-row::before{content:"";position:absolute;left:1px;top:5px;width:13px;height:13px;border-radius:999px;background:var(--paper);border:1.5px solid var(--accent);}
+.section--alt .vtl-row::before,.proofbar .vtl-row::before{background:var(--paper-2);}
+.vtl-row.now::before{background:var(--accent);}
+.vtl-yr{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--accent-deep);}
+.vtl-head{font-family:var(--serif);font-size:clamp(22px,3vw,28px);line-height:1.1;color:var(--ink);margin:3px 0 7px;}
+.vtl-row.now .vtl-head{font-style:italic;color:var(--accent-deep);}
+.vtl-story{color:var(--ink-2);max-width:62ch;font-size:16px;margin:0;}
+.vtl-src{font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-top:9px;}
+
+/* essay (narrative) */
+.essay-grid{display:grid;gap:clamp(36px,5vw,64px);}
+.essay p{max-width:64ch;}
+.essay h3{margin-top:1.7em;}
+.essay .pull{font-family:var(--serif);font-style:italic;font-size:clamp(23px,3.2vw,30px);line-height:1.18;color:var(--ink);border-left:2px solid var(--accent);padding-left:20px;margin:1.3em 0;max-width:30ch;}
+.aside{align-self:start;}
+.aside .aker{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin:0 0 4px;}
+.aside .aker .dot{color:var(--accent);}
+.mini-tl{border-top:1px solid var(--rule);}
+.mini-tl .m-row{display:grid;grid-template-columns:auto 1fr;gap:3px 14px;padding:13px 0;border-bottom:1px solid var(--rule);}
+.mini-tl .m-yr{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--accent-deep);}
+.mini-tl .m-tx{color:var(--ink-2);font-size:15px;line-height:1.4;}
+.mini-tl .m-tx b{font-weight:inherit;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:16px;}
+.aside .acard{margin-top:clamp(26px,3vw,34px);}
+
+/* dashboard */
+.dash{display:grid;gap:clamp(28px,4vw,46px);}
+.pcard{background:var(--paper-2);border:1px solid var(--rule);border-radius:4px;padding:clamp(24px,3vw,32px);}
+.pcard-portrait{margin:0 0 18px;max-width:150px;}
+.pcard-portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:62% 34%;border:1px solid var(--rule);border-radius:6px;background:var(--paper-3);}
+.pcard .pname{font-family:var(--serif);font-weight:400;font-size:clamp(36px,5vw,46px);line-height:.96;letter-spacing:-.02em;margin:.3em 0 0;color:var(--ink);}
+.pcard .prole{font-family:var(--serif);font-style:italic;color:var(--accent-deep);font-size:clamp(22px,3vw,27px);line-height:1;margin-top:3px;}
+.pcard .pwhere{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink-2);margin-top:15px;line-height:1.5;}
+.pcard .pcta{display:flex;flex-direction:column;gap:10px;margin-top:20px;}
+.pcard .pcta .pill{justify-content:center;}
+.pcard dl{margin:20px 0 0;border-top:1px solid var(--rule);}
+.pcard dl > div{padding:11px 0;border-bottom:1px solid var(--rule);}
+.pcard dt{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:2px;}
+.pcard dd{margin:0;color:var(--ink-2);font-size:15px;line-height:1.4;}
+.pcard dd.acc{color:var(--accent-deep);font-style:italic;font-family:var(--serif);font-size:17px;}
+
+@media (min-width:860px){
+  .pcard-portrait{max-width:none;}
+}
+@media (min-width:880px){
+  .essay-grid{grid-template-columns:1.5fr 1fr;}
+  .dash{grid-template-columns:300px 1fr;align-items:start;}
+  .pcard{position:sticky;top:84px;}
+}
+
+
+/* ===== v6 — career callout rail (fills the timeline's free space) ===== */
+.cthesis{font-family:var(--serif);font-style:italic;font-size:clamp(24px,3.6vw,36px);line-height:1.14;letter-spacing:-.01em;color:var(--ink);max-width:21ch;margin:0 0 clamp(30px,4.5vw,48px);}
+.cthesis em{color:var(--accent-deep);font-style:italic;}
+.careergrid{display:grid;gap:clamp(34px,5vw,56px);}
+.crail{display:block;}
+.crail .reyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin:0 0 2px;}
+.crail .reyebrow .dot{color:var(--accent);}
+.rcallouts{border-top:1px solid var(--rule);}
+.rcallout{padding:18px 0;border-bottom:1px solid var(--rule);}
+.rfig{font-family:var(--serif);font-size:clamp(36px,4.4vw,46px);line-height:.92;letter-spacing:-.02em;color:var(--ink);}
+.rfig .unit{font-style:italic;font-size:.5em;color:var(--accent-deep);margin-left:.12em;}
+.rline{color:var(--ink-2);font-size:15px;line-height:1.4;margin:7px 0 0;max-width:34ch;}
+.rsrc{font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-top:7px;}
+.cpull{font-family:var(--serif);font-style:italic;font-size:clamp(21px,2.5vw,26px);line-height:1.2;color:var(--ink);border-left:2px solid var(--accent);padding-left:18px;margin:0;max-width:24ch;}
+.rbio{color:var(--ink-2);font-size:15px;line-height:1.55;margin:0 0 .85em;max-width:38ch;}
+.rbio:first-of-type{margin-top:12px;}
+.rmap{border-top:1px solid var(--rule);margin-top:4px;}
+.rmap-row{padding:13px 0;border-bottom:1px solid var(--rule);}
+.rmap .from{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);}
+.rmap .to{display:block;color:var(--ink);font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.15;margin-top:3px;}
+.rmap .arrow{color:var(--accent);font-style:normal;margin-right:.15em;}
+.crail .sames{margin-top:18px;}
+.crail .cpull{margin-top:clamp(22px,3vw,30px);}
+@media (min-width:980px){
+  .careergrid{grid-template-columns:1fr clamp(290px,30vw,360px);align-items:start;}
+  .crail{position:sticky;top:92px;}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NM2CDHX8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="nav" aria-label="Section navigation">
+    <a class="wordmark" href="#top">Jack Hefner</a>
+    <ul class="nav-links"><li><a href="#career">Career</a></li><li><a href="#contact">Contact</a></li></ul>
+    <a class="pill pill--primary nav-email" href="https://www.linkedin.com/in/jhefneriii" target="_blank" rel="noopener">LinkedIn ↗</a>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="eyebrow"><span class="dot" aria-hidden="true">●</span> SEO Data Analyst — Lake Stevens, WA</p>
+      <h1>Jack Hefner <span class="role">SEO Data Analyst</span></h1>
+      <p class="subhead">I turn crawl data, search consoles, and analytics into ranking decisions. Fourteen years of engineering rigor, pointed at search.</p>
+      <p class="careerpath" aria-label="Career path: DevOps to Engineer to Manager to Data analytics to SEO">
+        <span>DevOps</span><i aria-hidden="true">→</i>
+        <span>Engineer</span><i aria-hidden="true">→</i>
+        <span>Manager</span><i aria-hidden="true">→</i>
+        <span>Data analytics</span><i aria-hidden="true">→</i>
+        <span class="now">SEO</span>
+      </p>
+      <div class="hero-cta">
+        <a class="pill pill--primary" href="https://www.linkedin.com/in/jhefneriii" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+        <a class="pill pill--ghost" href="#career">The path →</a>
+        <span class="avail">Open to new roles.</span>
+      </div>
+    </div>
+    <figure class="hero-portrait">
+      <img src="images/jack-hefner.jpg" srcset="images/jack-hefner-384.jpg 384w, images/jack-hefner.jpg 768w" sizes="(min-width:880px) 332px, 104px" width="768" height="960" loading="eager" decoding="async" alt="Jack Hefner, SEO data analyst, on the Danube embankment in Budapest">
+      <figcaption class="photo-note">
+        <svg class="photo-arrow" viewBox="0 0 96 86" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14 80 C 40 72, 60 68, 66 44 C 70 30, 67 20, 61 11"/>
+          <path d="M47 18 L 61 8 L 71 23"/>
+        </svg>
+        <p class="photo-note-text">Me in Budapest visiting my front-end devs. Hence the tired eyes. But man, the scenery there is gorgeous!</p>
+      </figcaption>
+    </figure>
+  </section>
+  <section class="section section--alt" id="career" aria-labelledby="career-h">
+    <div class="chrome"><span class="label"><span class="dot" aria-hidden="true">●</span> 01 — Career.log</span><span class="desc">Fourteen years. Five stops. One loop.</span></div>
+    <h2 id="career-h">Optimization is the through-line.</h2>
+    <p class="cthesis">A software engineer’s job and an SEO data analyst’s job are <em>the same job.</em></p>
+    <div class="careergrid">
+      <div class="vtl">
+          <div class="vtl-row">
+            <span class="vtl-yr">2012</span>
+            <div class="vtl-head">A rack, a fiber run, and a 4 a.m. cutover.</div>
+            <p class="vtl-story">DevOps at a Seattle managed-cloud startup. Ansible, data-center operations, and the habit of keeping a log and analyzing our performance before anyone asked for one.</p>
+            <p class="vtl-src">DevOps · Blue Box</p>
+          </div>
+          <div class="vtl-row">
+            <span class="vtl-yr">2017</span>
+            <div class="vtl-head">The first product I built from scratch.</div>
+            <p class="vtl-story">After IBM acquired Blue Box, I built a sales-engagement tracker. React/Redux frontend, Elixir backend serving 150 users, from Sales to the C-suite. The customer tracking was the real deliverable, not just a pretty UI.</p>
+            <p class="vtl-src">Software Engineer · IBM</p>
+          </div>
+          <div class="vtl-row">
+            <span class="vtl-yr">2022</span>
+            <div class="vtl-head">I built the analysis tool everyone used.</div>
+            <p class="vtl-story">I led the division’s observability platform — a sales/engineering/support tracking app. We grew our user base from 2 internal teams to 13 in two years. This was the first system I built whose entire value was analysis.</p>
+            <p class="vtl-src">Manager · IBM</p>
+          </div>
+          <div class="vtl-row">
+            <span class="vtl-yr">2024</span>
+            <div class="vtl-head">The analysis notebook that paid for itself.</div>
+            <p class="vtl-story">Running billing for our division at roughly 100K events an hour, a data audit surfaced $67K of underbilling at a European bank. A license-optimization engine I built analyzed the data and saved about $102K a month. Analysis and optimization became foundational to how I look at customer data.</p>
+            <p class="vtl-src">Senior Manager · IBM</p>
+          </div>
+          <div class="vtl-row now">
+            <span class="vtl-yr">2026</span>
+            <div class="vtl-head">Same loop. New dataset.</div>
+            <p class="vtl-story">Now pointed at GA4, Search Console, Core Web Vitals, and crawl budgets. Every new thing I learn about SEO has me more excited than the last.</p>
+            <p class="vtl-src">Open to SEO roles</p>
+          </div>
+        </div>
+      <aside class="crail" aria-label="About Jack, pinned to the experience">
+        <p class="reyebrow"><span class="dot" aria-hidden="true">●</span> About</p>
+        <p class="rbio">A homegrown software engineer who’s done everything from working in data centers to building full-stack web apps and websites. Now an SEO enthusiast who finds every bit of data about a site intriguing and worth analyzing.</p>
+        <div class="rmap" aria-label="How the work maps from engineering to SEO">
+          <div class="rmap-row"><span class="from">Read a production incident</span><span class="to"><span class="arrow" aria-hidden="true">→</span> Read a crawl and index report</span></div>
+          <div class="rmap-row"><span class="from">Find the billing anomaly</span><span class="to"><span class="arrow" aria-hidden="true">→</span> Find the ranking leak</span></div>
+          <div class="rmap-row"><span class="from">Move the dollar number</span><span class="to"><span class="arrow" aria-hidden="true">→</span> Move the traffic number</span></div>
+        </div>
+        <ul class="sames">
+          <li><a href="https://www.linkedin.com/in/jhefneriii"><span class="dot" aria-hidden="true">●</span> LinkedIn</a></li>
+          <li><a href="https://github.com/jmhthethird"><span class="dot" aria-hidden="true">●</span> GitHub</a></li>
+        </ul>
+        <p class="cpull">Measure, find the pattern, move the number.</p>
+      </aside>
+    </div>
+  </section>
+  <section class="on-ink contact" id="contact" aria-labelledby="contact-h">
+    <div class="chrome"><span class="label"><span class="dot" aria-hidden="true">●</span> 02 — Contact</span><span class="desc">For hire.</span></div>
+    <h2 id="contact-h">Let’s talk</h2>
+    <p class="ask">If your search numbers should be moving and they aren’t, <em>let’s find out why.</em> I’m open to SEO Data Analyst roles, Remote or Bellevue area.</p>
+    <div class="contact-cta">
+      <a class="pill pill--primary" href="https://www.linkedin.com/in/jhefneriii" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+      <a class="pill pill--ghost" href="mailto:jmhthethird@gmail.com">jmhthethird@gmail.com</a>
+    </div>
+  </section>
+  <footer class="on-ink site-footer">
+    <p class="foot-line">
+      <span>Jack Hefner</span><span class="sep" aria-hidden="true">·</span>
+      <span>Lake Stevens, WA</span><span class="sep" aria-hidden="true">·</span>
+      <a href="https://www.linkedin.com/in/jhefneriii">LinkedIn</a><span class="sep" aria-hidden="true">·</span>
+      <a href="https://github.com/jmhthethird">GitHub</a><span class="sep" aria-hidden="true">·</span>
+      <button type="button" class="cookie-link" id="cookie-settings">Cookie settings</button><span class="sep" aria-hidden="true">·</span>
+      <span>© 2026</span>
+    </p>
+    <p class="colophon-stamp"><span class="cdot" aria-hidden="true"></span> Designed by <b>Jack Hefner</b> · Made with <a href="https://claude.ai/design" target="_blank" rel="noopener">Claude.ai/Design</a></p>
+  </footer>
+</main>
+<aside class="consent" id="consent" role="region" aria-label="Cookie consent" aria-hidden="true">
+  <p id="consent-text">I use Google Tag Manager and GA4 to measure how this page performs in search. Allow analytics and ad cookies?</p>
+  <div class="consent-btns">
+    <button type="button" class="accept" id="consent-accept">Allow</button>
+    <button type="button" class="decline" id="consent-decline">Decline</button>
+  </div>
+</aside>
+<script>
+(function(){
+  var el=document.getElementById('consent'),
+      txt=document.getElementById('consent-text'),
+      btns=el.querySelector('.consent-btns'),
+      accept=document.getElementById('consent-accept'),
+      decline=document.getElementById('consent-decline'),
+      reopen=document.getElementById('cookie-settings'),
+      msgTimer;
+  function read(){try{return localStorage.getItem('jh-consent');}catch(e){return null;}}
+  function open(){clearTimeout(msgTimer);txt.textContent='I use Google Tag Manager and GA4 to measure how this page performs in search. Allow analytics and ad cookies?';btns.style.display='';el.classList.add('is-open');el.setAttribute('aria-hidden','false');}
+  function close(){el.classList.remove('is-open');el.setAttribute('aria-hidden','true');}
+  function choose(v){
+    try{localStorage.setItem('jh-consent',v);}catch(e){}
+    if(v==='granted'&&typeof gtag==='function'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}
+    if(v==='denied'&&typeof gtag==='function'){gtag('consent','update',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});}
+    // brief confirmation, then slide away
+    btns.style.display='none';
+    txt.innerHTML=(v==='granted'?'Thanks \u2014 analytics on.':'Got it \u2014 analytics off.')+' <span class=\"consent-msg\">You can change this anytime under Cookie settings.</span>';
+    msgTimer=setTimeout(close,1500);
+  }
+  accept.addEventListener('click',function(){choose('granted');});
+  decline.addEventListener('click',function(){choose('denied');});
+  if(reopen){reopen.addEventListener('click',function(){open();});}
+  if(!read()){ void el.offsetHeight; open(); }
+})();
+</script>
+<template id="__bundler_thumbnail" data-bg-color="#F4F1EA">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#F4F1EA"/>
+    <text x="600" y="440" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="320" fill="#1A1814">JH</text>
+    <circle cx="600" cy="560" r="14" fill="#C8853F"/>
+  </svg>
+</template>
+</body>
+</html>
